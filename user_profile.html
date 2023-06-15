@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user_profile.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <section class="menu">
+        <input type="checkbox" id="burgerMenu">
+        <label for="burgerMenu"></label>
+        <nav class="main-menu">
+            <div class="name_company">
+                <span>Company</span>
+            </div>
+            <hr>
+            <ul class="menu-list">
+                <li class="dashboard"><a href="index.html"><img class="dashboard_img" src="img/dashboard_gray.svg" alt="dashboard">Dashboard</a> 
+                <li id="activeUser" class="user_profile "><a href="user_profile.html"><img class="user_img" src="img/account_gray.svg" alt="account">User profile</a></li>
+                <li class="sales"><a href="sales.html"><img class="notification_img" src="img/notify_gray.svg" alt="sales">Sales</a></li>
+                <li class="support"><a href="support.html"><img class="support_img" src="img/support_gray.svg" alt="support">Support</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="wrapper_user">
+        <div class="rais_user_profile">
+            <p class="headline">User Profile</p>
+            <div class="container_wrapper">
+                <div class="info_profile">
+                    <div class="hat_info">
+                        <span>Edit Profile</span>
+                        <p>Complete your profile</p>
+                    </div>
+                    <div class="content_info_grid">
+                        <div class="info_entry_company entry">
+                            <label for="company">Company</label>
+                            <input type="text" id="company">
+                        </div>
+                        <div class="info_entry_username entry">
+                            <label for="username">Username</label>
+                            <input type="text" id="username">
+                        </div>
+                        <div class="info_entry_email_address entry">
+                            <label for="emailAddress">Email address</label>
+                            <input type="email" id="emailAddress">
+                        </div>
+                        <div class="info_entry_first_name entry">
+                            <label for="firstName">First name</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="info_entry_last_name entry">
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName">
+                        </div>
+                        <div class="info_entry_address entry">
+                            <label for="address">Address</label>
+                            <input type="text" id="address">
+                        </div>
+                        <div class="info_entry_city entry">
+                            <label for="city">City</label>
+                            <input type="text" id="city">
+                        </div>
+                        <div class="info_entry_country entry">
+                            <label for="country">Country</label>
+                            <input type="text" id="country">
+                        </div>
+                        <div class="info_entry_poastal_code entry">
+                            <label for="postalCode">Postal Code</label>
+                            <input type="password" id="postalCode">
+                        </div>
+                        <div class="info_entry_about_me entry">
+                            <label for="aboutMe">About Me</label>
+                            <textarea name="" id="problem" cols="1" rows="10"></textarea>
+                        </div>
+                        <div class="info_entry_botton ">
+                            <input class="botton" type="submit" value="update profile">
+                        </div>
+                    </div>
+                </div>
+                <div class="person_profile">
+                    <div class="avatar">
+                        <img src="img/avatar.jpg" alt="">
+                    </div> 
+                    <div class="text_dickription">
+                        <span class="position">police officer / driver</span>
+                        <p class="name">Ryan Gosling</p>
+                        <p class="quote">There are a hundred thousands streets in this city. You give me a time and a place, I give you 
+                            a five minute window. Anything happens in that five minutes and I'm with you. No matter what. 
+                            Anything happens a minute either side of that and you're on your own. Do you understand?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <div class="footer">
+                <div class="about">
+                    <ul>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">LICENSES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="love">
+                    <span>2023 - made with love</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

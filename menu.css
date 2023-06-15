@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+#activeDashboard a, #activeSales a, #activeUser a, #activeSupport a {
+    background-color:#e94558;
+    color: white;
+}
+
+#activeDashboard img {
+    content: url('img/dashboard_white.svg');
+}
+
+#activeSales img {
+    content: url('img/notify_white.png');
+}
+
+#activeUser img {
+    content: url('img/account_white.svg');
+}
+
+#activeSupport img {
+    content: url('img/support_white.png');
+}
+
+body {
+  background-color: #e9e4e6;
+}
+
+li img{
+    width: 30px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.name_company {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 20px 25px;
+    font-size: 20px;
+    color: #4e4d4d;
+}
+
+.main-menu {
+    height: 100vh;
+    width: 190px;
+    background-color: #f6f5f5;
+    position: fixed;
+    box-shadow: 7px 0 5px -5px rgba(0, 0, 0, .5);
+}
+
+.menu-list li {
+    vertical-align: middle;
+    padding: 10px 5px;
+}
+
+.menu-list a {
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-weight: 500;
+}
+
+.menu-list a:hover {
+    background-color:#e94558;
+    color: white;
+}
+
+.main-footer {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 70px;
+    background-color: #e9e4e6;
+    z-index: -1;
+    border-top: 1px solid #bdb9ba;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: #686666;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main-footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer {
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.love {
+    padding: 20px;
+}
+
+.about a {
+    padding-left: 20px;
+}
+
+#burgerMenu, [for=burgerMenu] {
+    display: none;
+}
+
+.dashboard:hover .dashboard_img {
+    content: url('img/dashboard_white.svg');
+}
+
+.user_profile:hover .user_img {
+    content: url('img/account_white.svg');
+}
+
+.sales:hover .notification_img {
+    content: url('img/notify_white.png');
+}
+
+.support:hover .support_img {
+    content: url('img/support_white.png');
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+    [for=burgerMenu] {
+        display: block;
+        position: fixed;
+        margin: 10px;
+        z-index: 2;
+    }
+
+    [for=burgerMenu]::before {
+        content: url('img/menu.png');
+        position: fixed;
+        cursor: pointer;
+    }
+
+    #burgerMenu:checked +[for=burgerMenu]::before {
+        content: url('img/clousing.png');
+        position: fixed;
+    }
+
+    #burgerMenu:checked + label + nav {
+        display: block;
+        animation: menu_animation 1s ease ;
+    }
+
+    .main-menu {
+        display: none;
+        height: 60vh;
+        width: 100%;
+        z-index: 10;
+        margin-top: 40px;
+    }
+
+    .name_company {
+        text-align: center;
+    }
+
+    .dashboard a, .user_profile a, .sales a, .support a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        margin: 0 auto;
+    }
+}
+
+@keyframes menu_amimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
